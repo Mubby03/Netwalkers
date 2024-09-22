@@ -247,6 +247,7 @@ main {
         margin-top: 20px;
         font-size: 18px;
         margin-right: 40px;
+        top: 20px;
         font-weight: bold;
         color: #5b5b5b;
         text-align: right; /* Add this line to align the breadcrumb to the right */
