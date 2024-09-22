@@ -17,7 +17,7 @@ header {
     align-items: center;
     border-radius: 7px;
     justify-items: flex-start;
-
+}
     .logo {
         /* Add styles for your logo image */
         margin-left: 25px;
@@ -68,7 +68,6 @@ header {
         height: 7px;
         justify-content: flex-end;
     }
-}
 
 .content-wrapper {
     display: flex;
@@ -122,6 +121,7 @@ header {
 
 /* Arrow Icon Styles */
 .arrow-icon {
+    left: 300px;
     position: absolute; 
     width: 15px; /* Set a fixed size for the arrow */
     height: 15px;
