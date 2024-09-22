@@ -116,7 +116,7 @@ header {
 .sidebar li:hover {
     cursor: pointer;
     border-bottom: 2px solid rgb(164, 14, 14); /* Add red line under the text */
-    width: 100px; /* Set the width of the line to 100px */
+    width: 500px; /* Set the width of the line to 100px */
 }
 
 /* Arrow Icon Styles */
