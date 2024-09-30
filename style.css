@@ -1,326 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #ffffff;
-    padding: 0;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #5b5b5b;
 }
 
 /* Header styling */
 header {
-    margin-top: 30px;
-    height: 136px;
-    margin-left: 22px;
-    margin-right: 22px;
-    display: flex;
-    box-shadow: #f0f0f0 0px 2px 4px;
-    box-shadow: black;
-    align-items: center;
-    border-radius: 7px;
-    justify-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
-    .logo {
-        /* Add styles for your logo image */
-        margin-left: 25px;
-        width: 296px;
-        margin-top: 12px;
-        height: 60px;
-    }
 
-    .hamburger {
-        display: none;
-        justify-content: flex-start;
-    }
+.Hsec {
+  display: flex;
+}
 
-    /* laboratory name style */
-    .lab-name {
-        margin-left: 37px;
-        font-size: 36sp;
-        font-weight: bold;
-        font-style: roboto;
-        color: #5b5b5b;
-    }
+#Rhead,
+#Lhead {
+  align-items: center;
+}
 
-    .notification-bell {
-        margin-left: auto;
-        margin-right: 20px;
-        margin-bottom: 12px;
-        padding: 3px;
-        width: 24px;
-        height: 24px;
-        justify-content: flex-end;
-    }
+.Rpad {
+  padding: 10px;
+  margin-right: 1px;
+}
 
-    /* styling for the user name */
-    .user_name {
-        margin-left: 20px;
-        font-size: 24sp;
-        font-weight: bold;
-        font-style: roboto;
-        color: #5b5b5b;
-    }
-
-    /* styling for the user avatar/ display picture */
-    .user_avatar_select {
-        margin-left: 12px;
-        margin-right: 18px;
-        margin-bottom: 10px;
-        width: 10px;
-        height: 7px;
-        justify-content: flex-end;
-    }
+.Lpad {
+  padding: 30px;
+}
 
 .content-wrapper {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  min-height: 84vh;
+  width: 100%;
 }
-
 /* Sidebar Styles */
 .sidebar {
-    margin-top: 21px;
-    margin-left: 22px;
-    width: 350px;
-    background-color: #f9f9f9;
-    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    padding: 15px;
-    font-size: 26px;
-    font-weight: medium;
-    border-radius: 7px;
-    font-family: 'Roboto', sans-serif;
-    color: #5b5b5b;
+  width: 22%;
+  box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-height: 84vh;
+  padding-top: 40px;
+}
+ul {
+  list-style: none;
+  font-size: 30px;
+  font-weight: 500;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+li {
+  display: flex;
+  padding-bottom: 30px;
 }
-
-/* Add styles for sidebar list items/ selections */
-.sidebar li {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+.icon {
+  padding-right: 25px;
 }
-
-
-.sidebar li img {
-    margin-left: 20px;
-    margin-right: 10px;
-    width: 19px;
-    height: 22px;
-}
-
-.sidebar li:hover {
-    cursor: pointer;
-    margin-left: 20px;
-    border-bottom: 2px solid rgb(164, 14, 14); /* Add red line under the text */
-    width: 200px; /* Set the width of the line to 100px */
-}
-
 /* Arrow Icon Styles */
 .arrow-icon {
-    left: 300px;
-    position: absolute; 
-    width: 15px; /* Set a fixed size for the arrow */
-    height: 15px;
-  }
-
-/* Main Content Styles */
-.main-content {
-    margin-left: 31px;
-    margin-right: 21px;
-    height: 85%;
-    flex: 1 0 auto;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 7px;
-    font-size: 18px;
-    font-weight: bold;
-    font: roboto;
-    padding: 20px;
-    margin-right: 30px;
-    color: #5B5B5B;
-    margin-top: 21px;
-    position: relative;
+  align-self: center;
+  position: absolute;
+  left: 340px;
+}
+.up {
+  transform: rotate(180deg);
+}
+.custom-underline {
+  display: inline-block;
+  position: relative;
+}
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 10%;
+  width: 80%;
+  border-bottom: 2px solid #9c3030;
+}
+.mainContent {
+  margin-left: 20px;
+  width: 78%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Footer styling */
-.footer {
-    flex-shrink: 0;
-    background-color: #f9f9f9;
-    padding: 10px;
-    font-size: 14px;
-    text-align: center;
-    color: #5b5b5b;
+.main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
-.breadcrumb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    font-size: 18px;
-    margin-right: 40px;
-    font-weight: bold;
-    color: #5b5b5b;
-    text-align: right;
+.content .mainSection {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-
-/* Navigation styles */
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Container styles */
-.container {
-    display: flex;
-}
-
-aside {
-    width: 200px;
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-aside ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-aside ul li {
-    margin-bottom: 5px;
-}
-
-aside ul li a {
-    text-decoration: none;
-}
-
-main {
-    flex: 1;
-    padding: 10px;
-}
-
-/* Footer styles */
-.sidebar li:hover {
-  
-    cursor: pointer;
-}
-
-/* Main Content Styles */
-.main-content {
-    margin-left: 31px;
-    margin-right: 21px;
-    height: 85%;
-    flex: 1 0 auto;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 7px;
-    font-size: 18px;
-    font-weight: bold;
-    font: roboto;
-    color: #333;
-    padding: 20px;
-    margin-top: 21px;
-    position: relative;
-}
-
-.footer {
-    background-color: #f9f9f9;
-    padding: 10px;
-    font-size: 14px;
-    text-align: center;
-    color: #5b5b5b;
-}
-
-/* Breadcrumb styles */
-.breadcrumb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    font-size: 18px;
-    margin-right: 40px;
-    top: 20px;
-    font-weight: bold;
-    color: #5b5b5b;
-    /* Add this line to align the breadcrumb to the right */
-}
-
-
-/* Navigation styles */
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Container styles */
-.container {
-    display: flex;
-}
-
-aside {
-    width: 200px;
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-aside ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-aside ul li {
-    margin-bottom: 5px;
-}
-
-aside ul li a {
-    text-decoration: none;
-}
-
-main {
-    flex: 1;
-    padding: 10px;
-}
-
-/* Footer styles */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 72.6%;
-    height: 60px;
-    margin-top: 21px;
-    border-radius: 7px;
-    text-align: center;
-    color: grey;
-    font: bold 18px/1.5 "Roboto", sans-serif;
-    padding: 10px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/
+  text-align: center;
+  padding-top: 35px;
+  height: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  box-shadow: 2px 5px 10px rgba(18, 18, 18, 0.5);
 }
